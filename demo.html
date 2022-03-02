@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>mqtt-demo: A simple web application that can subscribe to topics from an MQTT broker over websockets</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+      <script src="./demo.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <h1>SymbIoTic</h1>
+            <form id="connection-information-form">
+               <b>Please select any of the underlying health conditions you have:</b><br>
+               <div class="checkboxes">
+                  <span>
+                     <input type="checkbox" id="scales1" name="scales1">
+                     <label for="scales1">Cardiovascular</label><br>
+                     <input type="checkbox" id="scales2" name="scales2">
+                     <label for="scales2">Pulmonary</label><br>
+                     <input type="checkbox" id="scales3" name="scales3">
+                     <label for="scales3">Pregnancy</label><br>
+                     <input type="checkbox" id="scales4" name="scales4">
+                     <label for="scales4">Neurological</label><br>
+                     <input type="checkbox" id="scales5" name="scales5">
+                     <label for="scales5">Blood Disorders</label><br>
+                     <input type="checkbox" id="scales6" name="scales6">
+                     <label for="scales6">Obesity</label><br>
+                     <input type="checkbox" id="scales7" name="scales7">
+                     <label for="scales7">Old age</label><br>
+                  </span>
+               </div>
+               <b>Username:</b>
+               <input id="host" type="text" name="host" value="JohnDoe"><br>
+               <input type="button" onclick="startConnect()" value="Connect">
+               <input type="button" onclick="startDisconnect()" value="Disconnect">
+            </form>
+            <b>Messages:</b><br>
+            <div id="messages"></div><br>
+            <b>Status:</b><br>
+            <div id="warnings"></div><br>
+            <b>Changes:</b><br>
+            <div id="changes"></div><br>
+            <button onclick="document.location='https://yoursymbiotic.wordpress.com/'">Visit our marketing page for more information!</button>
+         </div>
+         </div>
+   </body>
+</html>

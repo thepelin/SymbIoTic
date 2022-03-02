@@ -1,0 +1,118 @@
+input {
+    width : 150px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+input[type=button] {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+input[type=button]:hover {
+    background-color: #686868;
+}
+#messages {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width:80%;
+    margin-left: 10rem auto;
+    margin-right: 10rem auto;
+    display: inline-block;
+    border:1px solid black;
+    max-height: 250px;
+    min-height: 250px;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+}
+
+#messages span {
+    overflow-y: scroll;
+    overflow: scroll;
+}
+#warnings {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width:80%;
+    margin-left: 10rem auto;
+    margin-right: 10rem auto;
+    display: inline-block;
+    border:1px solid black;
+    max-height: 50px;
+    min-height: 50px;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+}
+
+#warnings span {
+    overflow-y: scroll;
+    overflow: scroll;
+}
+#changes {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width:80%;
+    margin-left: 10rem auto;
+    margin-right: 10rem auto;
+    display: inline-block;
+    border:1px solid black;
+    max-height: 250px;
+    min-height: 250px;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+}
+
+#changes span {
+    overflow-y: scroll;
+    overflow: scroll;
+}
+.container{
+    max-width: 80rem;
+    margin: 10rem auto;
+    background-color: rgb(49, 35, 17);
+    padding: 12px;
+    -webkit-box-shadow: 0px 0px 14px 1px #000000; 
+    box-shadow: 0px 0px 14px 1px #000000;
+}
+
+.checkboxes {
+   text-align:left;
+}
+  
+.checkboxes input{
+    margin: 0px 0px 0px 0px;
+}
+  
+.checkboxes label{
+    margin: 0px 0px 0px 3px;
+}
+
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg");
+    height: 100%;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Times New Roman", Times, serif;
+}
